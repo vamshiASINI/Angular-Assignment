@@ -1,0 +1,166 @@
+<!-- Header Starts's Here -->
+<header class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand">
+            <img class="logo" src="../../../assets/images/logo.png" />
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item ml-3 mb-3 ml-sm-0">
+                    <open-button title="Login" color="primary" color="primary-outline" (onClick)="buttonClick()"></open-button>
+                </li>
+                <li class="nav-item ml-2 mb-3 ml-sm-0">
+                    <open-button title="Get Started" color="primary" (onClick)="buttonClick()"></open-button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Header End's Here -->
+
+<!-- Page Starts's Here -->
+<main class="mt-4">
+    <section class="intro">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="blob-small">
+                    <div class="img w-100 h-100"></div>
+                </div>
+                <div class="message mt-5">
+                    <h1 class="message-title">We make it Super <br>Simple</h1>
+                    <div class="message-strick rounded-pill"></div>
+                </div>
+                <div class="intro-card">
+                    <open-card img="../../../assets/images/collect_img-video.png"></open-card>
+                    <img src="../../../assets/images/dots.svg" class="dots" style="top: -20px; right: -200px">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="circle">
+                    <div class="img w-100 h-100"></div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Eligibility Calculator</h5>
+                                <label>Monthly Income</label><br>
+                                <label>{{pemi.value}}L</label>
+                                <ng5-slider [(value)]="pemi.value" [options]="poptions">
+                                </ng5-slider>
+                                <label>Monthly Expanse</label><br>
+                                <label>{{remi.value}}L</label>
+
+                                <ng5-slider [(value)]="remi.value" [options]="roptions">
+                                </ng5-slider>
+
+                                <label>Repayment Teure</label>
+
+                                <select class="form-select" aria-label="Default select example">
+                            <option value="6" selected>6</option>
+                            <option value="12">12</option>
+                          </select>
+                                <label class="toggle" for="myToggle"><label>you have any existing loans?</label>
+                                <input class="toggle__input" name="" checked type="checkbox" id="myToggle">
+                                <div class="toggle__fill"></div>
+                                </label>
+                                <div>
+                                    <label for="existing load">Emi of existing loan(optional)</label>
+                                    <input type="text" class="form-control" aria-describedby="emi" placeholder="1500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="css">
+                            <div class="card-body">
+                                <label id="w"> Loan Ammount</label>
+                                <h5 id="w"> &#x20b9; 100000</h5>
+                                <label id="w">Your Emi will be</label>
+                                <h5 id="w"> &#x20b9; 15000</h5>
+
+                                <div class="nav-item ml-3 mb-3 ml-sm-0">
+                                    <button id="btn" (onClick)="buttonClick()">Get Money</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <img src="../../../assets/images/Group 6.svg" alt="Eligibility Calculator" class="eligibility-calculator ml-md-5"> -->
+
+                    <img src="../../../assets/images/dots.svg" class="dots">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="open-features">
+        <div class="row justify-content-center h-100">
+            <div class="col-12 col-md-6">
+                <div class="row align-content-start">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-5">
+                            <open-card color="primary" icon="../../../assets/images/Get Paid Instantly.png" title="Quick cash disbursement" content="Get terms loans that your business needs within 72 hrs">
+                            </open-card>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="open-card-push mb-5">
+                            <open-card color="primary" icon="../../../assets/images/freelancer_feature_icon_6@1.5x.png" title="Ace your business finances" content="Manage banking, accounting & everything in between, on one platform">
+                            </open-card>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-5">
+                            <open-card color="primary" icon="../../../assets/images/Low interest rate.png" title="Low-interest rate" content="Achieve your financial goals with an amazing interest rate starting at 13% per annum">
+                            </open-card>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="open-card-push mb-5">
+                            <open-card color="primary" icon="../../../assets/images/Covid.png" title="Loans to fight COVID-19" content="Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh">
+                            </open-card>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-5">
+                            <open-card color="primary" icon="../../../assets/images/Secure Payments.png" title="Zero Paperwork" content="Get started instantly by submitting only your basic details & bank statements">
+                            </open-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row h-75">
+                    <div class="col-12 align-self-center">
+                        <div class="ml-3">
+                            <div class="message mb-5">
+                                <h1 class="message-title">Boost your business<br>with Open</h1>
+                                <div class="message-strick-gray rounded-pill"></div>
+                                <p class="message-content">
+                                    Get your hands on a term loan that’s <br>crafted for your business
+                                </p>
+                            </div>
+                            <open-button title="Get an Open Account" color="primary-outline" (onClick)="buttonClick()">
+                            </open-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Page End's Here -->

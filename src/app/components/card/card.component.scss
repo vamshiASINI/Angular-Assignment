@@ -1,0 +1,39 @@
+.open-card {
+    box-shadow: 0px 0px 30px #2321321f;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background: #ffffff;
+    .open-card-icon {
+        width: 90px;
+        height: 90px;
+    }
+    .open-card-title,
+    .open-card-content {
+        font-size: 12px;
+    }
+    .open-card-title {
+        color: #333333;
+        margin-top: 20px !important;
+    }
+    .open-card-content {
+        color: #999999;
+        margin-top: 12px !important;
+    }
+}
+
+.open-card-primary:hover {
+    background: url("../../../assets/images/Rectangle\ 2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .open-card-title,
+    .open-card-content {
+        color: #ffffff;
+        opacity: 1;
+    }
+}
+
+.open-card-background-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

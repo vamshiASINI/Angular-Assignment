@@ -1,0 +1,250 @@
+.navbar {
+    .navbar-brand {
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-left: 50px;
+        }
+    }
+    .navbar-nav {
+        margin-right: 50px;
+        .nav-item {
+            margin-right: 16px;
+            .nav-link {
+                cursor: pointer;
+                color: #222222;
+                font-family: Open Sans !important;
+                font-size: 16px;
+                &:hover {
+                    color: #663399;
+                    border-bottom: 1px solid #663399;
+                }
+            }
+        }
+    }
+}
+
+.circle {
+    width: 800px;
+    height: 720px;
+    position: absolute;
+    top: -265px;
+    right: -80px;
+    z-index: -1;
+    .img {
+        background: url("../../../assets/images/circle.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.blob-small {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    .img {
+        background: url("../../../assets/images/blob-small.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.message {
+    .message-strick,
+    .message-strick-gray {
+        width: 136px;
+        height: 5px;
+    }
+    .message-strick {
+        background: #222222;
+    }
+    .message-strick-gray {
+        background: #707070;
+        margin-top: 32px;
+    }
+    .message-title {
+        font-size: 32px;
+        color: #222222;
+    }
+    .message-content {
+        color: #777777;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+.intro {
+    position: relative;
+    margin-left: 100px;
+    .intro-card {
+        margin-top: 52px;
+        width: 420px;
+        height: 220px;
+    }
+    .eligibility-calculator {
+        width: 480px;
+        height: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    .dots {
+        position: relative;
+        z-index: -9;
+        top: -40px;
+        right: -126px;
+        height: 50px;
+    }
+}
+
+.open-card-primary:hover {
+    background: url("../../../assets/images/Rectangle\ 2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.open-features {
+    background: url("../../../assets/images/sol_wave_bg.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 30px;
+    .open-card-push {
+        position: relative;
+        top: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ml-sm-0 {
+        margin-left: 0 !important;
+    }
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+    .intro {
+        .intro-card {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 767.98px) {
+    .intro {
+        margin-left: 0;
+        padding: 16px;
+    }
+    .eligibility-calculator {
+        width: 100% !important;
+    }
+    .dots {
+        top: -140px !important;
+        right: -50px !important;
+        height: 50px !important;
+    }
+    .open-features {
+        .open-card-push {
+            top: 0 !important;
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    margin-left: -54px;
+    border-radius: 1px 31px 31px 5px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    font-weight: 400;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#css {
+    margin-left: -77px;
+    margin-top: 70px;
+    height: 330px;
+}
+
+#btn {
+    box-shadow: 0px 0px 20px #00000033;
+    color: black;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+    background: white;
+    border-radius: 12px;
+    margin-top: 16px;
+    border: 2px solid #663399;
+    width: 100%;
+}
+
+#btn:hover {
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+}
+
+#w {
+    color: white;
+    padding: 7px;
+}
+
+#css {
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+}
+
+#open-button {
+    margin-top: 20px;
+}
+
+.toggle {
+    --width: 50px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background: #dddddd;
+    transition: background 0.2s;
+    float: right;
+    margin-left: 30px;
+}
+
+.toggle__input:checked~.toggle__fill {
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+}
+
+.toggle__fill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--height);
+    width: var(--height);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    transition: transform 0.2s;
+}
+
+.toggle__input:checked~.toggle__fill::after {
+    transform: translateX(var(--height));
+}

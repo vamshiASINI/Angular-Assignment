@@ -1,0 +1,12 @@
+<div class="card open-card w-100 h-100 border-0" *ngIf="img.length <= 0" [ngClass]="{'open-card-primary border-0': color === 'primary'}">
+    <div class="card-body p-4">
+        <img [src]="icon" class="open-card-icon"/>
+        <h5 class="open-card-title m-0 font-weight-bold">{{title}}</h5>
+        <p class="open-card-content m-0">
+            {{content}}
+        </p>
+    </div>
+</div>
+<div class="card h-100 w-100 open-card open-card-background-img border-0" [ngStyle]="{'background-image': 'url('+ img +')'}"
+    *ngIf="img.length > 0">
+</div>
